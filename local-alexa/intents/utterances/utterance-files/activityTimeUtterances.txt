@@ -1,0 +1,4 @@
+WhenActivityOnDayIntent when should i go for a {activity} on {day}?
+WhenActivityOnDayIntent when should i go for an {activity} on {day}?
+WhenActivityOnDayIntent what time should i go for a {activity} on {day}?
+WhenActivityOnDayIntent what time should i go for an {activity} on {day}?

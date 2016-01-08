@@ -1,0 +1,14 @@
+{
+	"utterances": [
+					"(when|what time) (should|could|shall) i go (|out) for a (run|jog)?",
+					"(when|what time) i (should|could) go (|out) for a (run|jog)?",
+					"(when|what)('s|is|would be) (the best|a good|a nice) time to go (|out) for a (run|jog)?",
+					"(|for) (the best|a good|a nice) time to go (|out) for a (run|jog)",
+					"(when|what)('s|is|would be) (the best|a good|a nice) time for a (run|jog)?",
+					"(|for) (the best|a good|a nice) time to go (|out) for a (run|jog)",
+					"(|for) (the best|a good|a nice) time for a (run|jog)",
+					"when ('s|is|would be) (good|best|nice) for a (run|jog)?",
+					"(when|what time) (would|could|should|might) be (good|best|nice) for a (run|jog)?",
+					"(when|what) (the best|a good) time for (|going on) a run (would|might) be?"
+				]
+}

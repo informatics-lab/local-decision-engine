@@ -1,0 +1,8 @@
+{"intents" : [
+  {"intent": "UmbrellaIntent",
+   "slots" : [{"name": "ukPlace", "type": "UK_PLACES"}]
+  },
+  {"intent": "RunIntent",
+   "slots" : []
+  }
+]}

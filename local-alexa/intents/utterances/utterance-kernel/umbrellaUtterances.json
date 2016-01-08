@@ -1,0 +1,6 @@
+{
+	"utterances": [
+					"(should|shall|do|will) i (take|bring) (an|my) umbrella (|with me) (|today) in {ukPlace}?",
+					"(will|do|might) i (need|want) (|to take|to bring) (an|my) umbrella (|with me) (|today) in {ukPlace}?"
+				]
+}

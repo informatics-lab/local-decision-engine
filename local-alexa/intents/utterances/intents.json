@@ -1,0 +1,5 @@
+{
+	"RunIntent": "runUtterances.json",
+	"UmbrellaIntent": "umbrellaUtterances.json",
+	"WhenActivityOnDayIntent": "activityTimeUtterances.json"
+}
