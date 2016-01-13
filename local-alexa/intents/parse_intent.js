@@ -1,4 +1,6 @@
-const utteranceFile = 'utterances/utterance-files/utterances.txt';
+const utteranceFileRelative = './utterances/utterance-files/utterances.txt';
+const utteranceFile = require.resolve(utteranceFileRelative);
+const sampleRequest = require.resolve('./sample_request.json');
 const fs = require('fs');
 const natural = require('natural');
 
@@ -15,7 +17,7 @@ function guess_intent(utterance) {
 	var classifier = new natural.LogisticRegressionClassifier();
 	var i = null;
 
-	data = fs.readFileSync(utteranceFile, 'utf8');
+	var data = fs.readFileSync(utteranceFile, 'utf8');
 	data = data.split("\n");
 	for (var i=0; i<data.length; i++) {
 		var match_template = compile_template(data[i]);
@@ -27,7 +29,7 @@ function guess_intent(utterance) {
 }
 
 function parse_intent(utterance) {
-	data = fs.readFileSync(utteranceFile, 'utf8');
+	var data = fs.readFileSync(utteranceFile, 'utf8');
 	data = data.split("\n");
 	for (var i=0; i<data.length; i++) {
 		var match_template = compile_template(data[i]);
@@ -48,7 +50,7 @@ function parse_intent(utterance) {
 		if (match && (match[0] !== '')) {
 			var slotsobj = {};
 			for (var j=0; j<slots.length; j++) {
-				slotsobj[slots[j]] = match[j+1];
+				slotsobj[slots[j]] = {name: slots[j], value: match[j+1]};
 			}
 			match_template['slots'] = slotsobj;
 			return match_template;
@@ -57,15 +59,23 @@ function parse_intent(utterance) {
 	return null;
 }
 
+function write_session_request(rq) {
+	var sessionRequest = JSON.parse(fs.readFileSync(sampleRequest, 'utf8'));
+	sessionRequest.request.timestamp = new Date().toISOString();
+	sessionRequest.request.intent['name'] = rq.intent;
+	sessionRequest.request.intent.slots = rq.slots;
+	return sessionRequest;
+}
+
+function get_full_request(utterance) {
+	return write_session_request(parse_intent(utterance));
+}
+
 function compile_template(line) {
 	var intent = line.split(' ').slice(0,1)[0];
 	var template = line.split(' ').slice(1).join(' ');
 	return {'intent': intent, 'template': template};
 }
 
-console.log('"'+"what time shall i go for a run?"+'"');
-console.log(parse_intent("what time shall i go for a run?"));
-console.log('"'+"should i take an umbrella in torquay?"+'"');
-console.log(parse_intent("should i take an umbrella in torquay?"));
-console.log('"'+"when should i go for a walk on sunday?"+'"');
-console.log(parse_intent("when should i go for a walk on sunday?"));
+exports.parse_intent = parse_intent;
+exports.get_full_request = get_full_request;
