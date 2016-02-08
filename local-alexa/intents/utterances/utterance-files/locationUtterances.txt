@@ -1,0 +1,2 @@
+LocationIntent in {exeter|location}
+LocationIntent around {exeter|location}

@@ -1,5 +1,6 @@
 {
-	"RunIntent": "runUtterances.json",
-	"UmbrellaIntent": "umbrellaUtterances.json",
-	"WhenActivityOnDayIntent": "activityTimeUtterances.json"
+	"StationaryWhenIntent": "activityTimeUtterances.json",
+	"LocationIntent": "locationUtterances.json",
+	"TotalTimeIntent": "totalTimeUtterances.json",
+	"StartTimeIntent": "startTimeUtterances.json"
 }
