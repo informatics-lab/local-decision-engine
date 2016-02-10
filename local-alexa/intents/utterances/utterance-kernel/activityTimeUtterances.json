@@ -1,14 +1,16 @@
 {
 	"utterances": [
-					"(when|what time) (should|could|shall) i go (|out) (on|for) (a|an) {run|activity}",
-					"(when|what time) i (should|could) go (|out) (on|for) (a|an) {run|activity}",
-					"(when|what)('s|is|would be) (the best|a good|a nice) time to go (|out) (on|for) (a|an) {run|activity}",
-					"(|for) (the best|a good|a nice) time to go (|out) (on|for) (a|an) {run|activity}",
-					"(when|what)('s|is|would be) (the best|a good|a nice) time for (a|an) {run|activity}",
-					"(|for) (the best|a good|a nice) time to go (|out) (on|for) (a|an) {run|activity}",
-					"(|for) (the best|a good|a nice) time for (a|an) {run|activity}",
-					"when ('s|is|would be) (good|best|nice) for a {run|activity}",
-					"(when|what time) (would|could|should|might) be (good|best|nice) for (a|an) {run|activity}",
-					"(when|what) (the best|a good) time for (|going on) (a|an) {run|activity} (would|might) be"
+					"(when|what time) (should|could|shall) i go (|out) (on|for|to) (a|an|the) {run|activity}",
+					"(when|what time) i (should|could) go (|out) (on|for|to) (a|an|the) {run|activity}",
+					"(when|what)('s|is|would be) (the best|a good|a nice) time to go (|out) (on|for|to) (a|an|the) {run|activity}",
+					"(|for) (the best|a good|a nice) time to go (|out) (on|for|to) (a|an|the) {run|activity}",
+					"(when|what)('s|is|would be) (the best|a good|a nice) time for (a|an|the) {run|activity}",
+					"(|for) (the best|a good|a nice) time to go (|out) (on|for|to) (a|an|the) {run|activity}",
+					"(|for) (the best|a good|a nice) time for (a|an|the) {run|activity}",
+					"when ('s|is|would be) (good|best|nice) for (on|for|to) (a|an|the) {run|activity}",
+					"(when|what time) (would|could|should|might) be (good|best|nice) for (a|an|the) {run|activity}",
+					"(when|what) (the best|a good) time for (|going on) (a|an|the) {run|activity} (would|might) be",
+					"(when|what) (the best|a good) time for (|going for) (a|an) {run|activity} (would|might) be",
+					"(when|what) (the best|a good) time for (|going to) (a|an|the) {run|activity} (would|might) be"
 				]
 }

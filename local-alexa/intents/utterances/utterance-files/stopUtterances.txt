@@ -1,0 +1,18 @@
+AMAZON.StopIntent all done
+AMAZON.StopIntent complete
+AMAZON.StopIntent done
+AMAZON.StopIntent end
+AMAZON.StopIntent everyone
+AMAZON.StopIntent finished
+AMAZON.StopIntent forget it
+AMAZON.StopIntent i am done
+AMAZON.StopIntent I'm done
+AMAZON.StopIntent negative
+AMAZON.StopIntent never mind
+AMAZON.StopIntent no more
+AMAZON.StopIntent no one
+AMAZON.StopIntent stop
+AMAZON.StopIntent that is everyone
+AMAZON.StopIntent that's all
+AMAZON.StopIntent that's it
+AMAZON.StopIntent you've got all of us

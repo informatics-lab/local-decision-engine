@@ -2,5 +2,7 @@
 	"StationaryWhenIntent": "activityTimeUtterances.json",
 	"LocationIntent": "locationUtterances.json",
 	"TotalTimeIntent": "totalTimeUtterances.json",
-	"StartTimeIntent": "startTimeUtterances.json"
+	"StartTimeIntent": "startTimeUtterances.json",
+	"AMAZON.HelpIntent": "helpUtterances.json",
+	"AMAZON.StopIntent": "stopUtterances.json"
 }

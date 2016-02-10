@@ -1,1 +1,1 @@
-TotalTimeIntent for {totalTime}
+TotalTimeIntent {totalTime}
